@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="Images/ banner no back.png" alt="Amit Belzberg logo">
+
+        <div class="menu-toggle"
+            onclick="this.classList.toggle('open'); document.querySelector('.main-nav').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="main-nav">
+            <a href="#">בית</a>
+            <a href="#tabs">שירותים</a>
+            <a href="#about">אודות</a>
+            <a href="#projects">פרויקטים</a>
+            <a href="#form">צרו קשר</a>
+        </nav>
+
+        <a href="#form" class="button">העסיקו אותי</a>
+    </header>
+
+    <section id="hero-section">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="Images/macbook-562498_1920.png" alt="תמונה ייצוגית">
+            </div>
+            <div class="hero-text">
+                <h1>היי אני עמית</h1>
+                <h2>אני מפתח תוכנה ואתרים</h2>
+                <p> תמיד רצית אתר שימנף את העסק שלך, אבל לא ידעת מה, מי ואיך? התקשרו או השאירו פרטים למטה – ונחזור
+                    אליכם!
+                    <br>
+                    לא יודע איזה אתר
+                    אתה מחפש? שיחת ייעוץ – עלינו!
+                    <br>
+                    הקמת אתרים מקצועיים בהתאמה אישית מלאה לעסק שלך.
+                </p>
+                <a class="hero-button" href="#form">צור קשר</a>
+                <button class="hero-button">להורדת קורות חיים</button>
+                <!-- הכפתור להורדת קורות חיים אינו עובד היות ואין לי עדיין קורות חיים -->
+            </div>
+        </div>
+    </section>
+
+    <section class="tabs" id="tabs">
+        <h2>השירותים שלי</h2>
+        <div class="tab-container">
+            <div class="tab-card">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M8.59 16.59L4 12l4.59-4.59L7.17 6l-6 6 6 6 1.42-1.41zm6.82 0L20 12l-4.59-4.59L16.83 6l6 6-6 6-1.42-1.41z" />
+                    </svg>
+                </div>
+                <h3>בניית אתרים</h3>
+                <p>
+                    אני בונה אתרים מותאמים אישית שמבוססים על טכנולוגיות מתקדמות, מהירים ורספונסיביים, כדי לתת לך אתר
+                    מקצועי שמותאם לכל
+                    מכשיר. כל אתר שנבנה נועד למקסם את חווית המשתמש ולהפוך את המבקרים ללקוחות נאמנים, תוך שמירה על
+                    ביצועים גבוהים והבטחת
+                    הצלחה עסקית
+                </p>
+            </div>
+
+            <div class="tab-card">
+                <div class="icon">
+                    <!-- License: Apache. Made by Remix Design -->
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M5 5v3h14V5H5zM4 3h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm2 9h6a1 1 0 0 1 1 1v3h1v6h-4v-6h1v-2H5a1 1 0 0 1-1-1v-2h2v1zm11.732 1.732l1.768-1.768 1.768 1.768a2.5 2.5 0 1 1-3.536 0z" />
+                        </g>
+                    </svg>
+                </div>
+                <h3>עיצוב אתרים</h3>
+                <p>
+                    עיצוב אתר ייחודי שיבדל את העסק שלך וימשוך את קהל היעד. אני מתמחה ביצירת חוויות משתמש מרהיבות,
+                    מודרניות ויעילות, שמספקות
+                    לא רק אסתטיקה אלא גם פונקציונליות, כך שהלקוחות שלך ירגישו תמיד בנוחות ויתלהבו לחזור
+                </p>
+            </div>
+            <div class="tab-card">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M19 8h-1.26A5.99 5.99 0 0013 4.26V3a1 1 0 10-2 0v1.26A5.99 5.99 0 006.26 8H5a1 1 0 000 2h1v2H5a1 1 0 000 2h1v2H5a1 1 0 000 2h1.26A5.99 5.99 0 0011 19.74V21a1 1 0 102 0v-1.26A5.99 5.99 0 0017.74 16H19a1 1 0 100-2h-1v-2h1a1 1 0 100-2h-1V8h1a1 1 0 100-2zM12 18a4 4 0 110-8 4 4 0 010 8z" />
+                    </svg>
+                </div>
+                <h3>תיקון באגים</h3>
+                <p>
+                    בעיות טכניות לא צריכות להפריע להצלחה שלך! אני מציע פתרונות תיקון מהירים ויעילים לכל בעיה טכנית, כך
+                    שהאתר שלך יפעל בצורה
+                    חלקה, ללא תקלות, ויבטיח חווית משתמש אופטימלית. תן לי לדאוג לטכנולוגיה, ואתה תוכל להתמקד בהצלחה
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h2>מי אני?</h2>
+
+        <p>אני מפתח אתרים עם תשוקה עזה לעולם הדיגיטלי ולתחום העיצוב. במהלך השנים פיתחתי מיומנויות ושיטות עבודה שמאפשרות
+            לי
+            ליצור אתרים מודרניים, יעילים וידידותיים למשתמש. אני מאמין שבניית אתרים לא מסתיימת רק בקוד – כל פרויקט עבורי
+            הוא
+            יצירה של חוויית משתמש שמשלבת בין טכנולוגיה, עיצוב ואסתטיקה.</p>
+
+        <div class="about-flex">
+            <div class="about-text">
+                <p>אני שואף לקחת את הרעיונות שלי ולהפוך אותם לאתרים חיים, מדברים שמצליחים לגעת ולרתום את המשתמש. במהלך
+                    הלימודים שלי למדתי את יסודות ה-HTML, CSS, ו-JavaScript, ואני ממשיך ללמוד ולהתעדכן כל הזמן
+                    בטכנולוגיות
+                    חדשות, כך שאוכל להציע פתרונות מתקדמים וחדשניים.</p>
+                <p>בנוסף, אני משקיע זמן בהבנת הצרכים של הלקוחות שלי, כדי להבטיח שהאתר לא רק ייראה טוב, אלא גם יספק
+                    פתרונות
+                    אמיתיים לצרכים העסקיים והאישיים שלהם.</p>
+            </div>
+            <div class="about-img">
+                <img src="Images/IMG_0300.jpeg" alt=" ,תמונה שלי ">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>עבודות נבחרות</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="Images/pic_project1.png" alt="Project Image">
+                <h3>תן לנו להוביל אותך</h3>
+                <p>דף נחיתה קלאסי ויחודי המסמל סטטוס ומושך לקוחות חדשים</p>
+                <a href="projectDisplay.html">לצפייה בפרויקט</a>
+            </div>
+            <div class="project-card">
+                <img src="Images/pic_project2.png" alt="Project Image">
+                <h3>Here & Now</h3>
+                <p>דף נחיתה מושך וצעקני עם ניגוד צבעים המושך את העין</p>
+                <a href="projectDisplay2.html">לצפייה בפרויקט</a>
+            </div>
+            <div class="project-card">
+                <img src="Images/pic_project3.png" alt="Project Image">
+                <h3>קפה טוב לבוקר טוב</h3>
+                <p>דף נחיתה צעיר וקליל עבור בית קפה</p>
+                <a href="projectDisplay3.html">לצפייה בפרויקט</a>
+            </div>
+            <div class="project-card">
+                <img src="Images/pic_project4.png" Project Image">
+                <h3>תן לנו להוביל אותך</h3>
+                <p>צעיר מושך ומעניין דף הנחיתה הזה מתאים בול לעסק שלך</p>
+                <a href="projectDisplay4.html">לצפייה בפרויקט</a>
+            </div>
+            <div class="project-card">
+                <img src="Images/pic_project5.png" alt="Project Image">
+                <h3>מאמן הכושר שלך</h3>
+                <p>דף נחיתה מודרני למאמן כושר שרוצה למנף את העסק שלו</p>
+                <a href="projectDisplay5.html">לצפייה בפרויקט</a>
+            </div>
+            <div class="project-card">
+                <img src="Images/pic_project6.png" alt="Project Image">
+                <h3>לק ג'ל | יובל בשן</h3>
+                <p>תיאור קצר של הפרויקט שיסביר מה עשית בו.</p>
+                <a href="projectDisplay6.html">לצפייה בפרויקט</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="form">
+        <form id="contact-form">
+            <h2>צור קשר</h2>
+            <input type="text" id="name" name="name" placeholder="שם מלא / שם עסק" required>
+            <input type="email" id="email" name="email" placeholder="אימייל" required>
+            <textarea id="message" name="message" placeholder="פרט פה בקצרה על הבקשה שלך" rows="4" required></textarea>
+            <button id="submit-button" type="submit">שלח</button>
+        </form>
+    </section>
+
+    <footer>
+        <p class="copyright">© כל הזכויות שמורות | Amit Belzberg</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.main-nav').classList.remove('active');
+                document.querySelector('.menu-toggle').classList.remove('open');
+            });
+        });
+    </script>
+</body>
+
+</html>

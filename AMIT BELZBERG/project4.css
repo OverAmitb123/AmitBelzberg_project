@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    direction: rtl;
+}
+
+.header-section {
+    height: 60vh;
+    background-image: url('Images/Path4.png');
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.white-section {
+    height: 40vh;
+    background-color: white;
+}
+
+.form-box {
+    background-color: rgba(41, 41, 41, 0.95);
+    color: white;
+    padding: 3rem 2.5rem;
+    width: 100%;
+    right: 15%;
+    max-width: 500px;
+    text-align: right;
+    position: absolute;
+    bottom: -160px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-box h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.form-box p {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #e91e63;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #e91e63;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    float: left;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c2185b;
+}
+
+@media (max-width: 780px) {
+    .header-section {
+        height: 40vh;
+    }
+
+    .form-box {
+        width: 80vw;
+        bottom: -300px;
+    }
+}

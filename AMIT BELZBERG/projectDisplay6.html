@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project display</title>
+    <link rel="stylesheet" href="projectDisply.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="Images/ banner no back.png" alt="Amit Belzberg logo">
+
+        <div class="menu-toggle"
+            onclick="this.classList.toggle('open'); document.querySelector('.main-nav').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="main-nav">
+            <a href="index.html">בית</a>
+            <a href="index.html#form">שירותים</a>
+            <a href="index.html#about">אודות</a>
+            <a href="index.html#projects">פרויקטים</a>
+            <a href="index.html#form">צרו קשר</a>
+        </nav>
+
+        <button class="button">העסיקו אותי</button>
+    </header>
+    <hr>
+    <section class="hero-section">
+        <h1>תן לנו להוביל אותך קדימה</h1>
+        <p>
+            דף נחיתה מודרני המושך את העין באמצעות ניגוד צבעים נכון באמצעות שפות תוכנה מתקדמות
+        </p>
+        <a class="a" href="zip_file/project5.zip" download>להורדת הפרויקט</a>
+        <a class="a" href="project6.html" target="_blank">לצפייה בפרויקט</a>
+    </section>
+
+    <section class="technology">
+        <div class="icons">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+        </div>
+    </section>
+
+    <section class="image-box">
+        <img src="Images/pic_project6.png" alt="project1 pic">
+    </section>
+
+    <footer>
+        <p class="copyright">© כל הזכויות שמורות | Amit Belzberg</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.main-nav').classList.remove('active');
+                document.querySelector('.menu-toggle').classList.remove('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
